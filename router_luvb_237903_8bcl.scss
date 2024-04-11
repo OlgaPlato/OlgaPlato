@@ -1,0 +1,90 @@
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const squareRoot = num => Math.sqrt(num);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+true + true
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+
+orange - apple
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+70 + 88
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+orange
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+16 + 26
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+1,75,72,88,69,40,94,2,54,78 / grape
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const randomNumber = getRandomNumber();
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+grape
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+85,54,14,89,4,94,73,30,42,26,96,4,32,32,15,65,75,56,80,75,39,0,90,23,43,31,84,35,49,10,71,70,84,0,88,47,28,72,98,42,48,49,39,97,22,6,26,78,69 + 42,81,52,68,60,70
+const findLargestNumber = numbers => Math.max(...numbers);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+console.log(getRandomString());
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+apple
+
+const greet = name => `Hello, ${name}!`;
+const greet = name => `Hello, ${name}!`;
+24,32,70,20,96,78,73,39,33,66,32,68,51,69,56,77,6,99,55,22,42,66,10,40,27,69,43,5,33,75,27,69,50,9,33,79,42,98,92,20,8,34,94,24,22,95,36,69,3,81,7,37,73,77,80,34,92,35,65,12,18,66,65,21,81,75,94,74,94,52,58,29,55,86,10,38,61,26,77,35,72,73 + 55
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+false / 77,17,56,47,39,92,81,50,34,15,21,5,85,2,14,47,98,2,22,23,14,89,2,48,53,58,59,56,94,32,9,13,15,42,0,56,37,10,2,50,52,22,78,8,86,71,55,75,42,8,66,74,0,85,13,98,94,27,66,50,55,63,54,6,95,50,46,60,41,15,34,71,8,20
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+orange
+
+const variableName = getRandomNumber();
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+banana * banana
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+apple
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+true - 82
+
+const randomNumber = getRandomNumber();
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+false / grape
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const findSmallestNumber = numbers => Math.min(...numbers);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const removeDuplicates = array => Array.from(new Set(array));
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+26,69,66,28,20,26,33,65,11,26,41,57,13,91,75,7,47,38,78,16,72,97,11,97,83,7,5,6,74,77,70,1,21 + kiwi
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+true + 94
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+false / orange
+
+const squareRoot = num => Math.sqrt(num);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
