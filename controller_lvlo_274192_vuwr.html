@@ -1,0 +1,9 @@
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+const capitalizeString = str => str.toUpperCase();
+
